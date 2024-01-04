@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">What's New</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Thirst meets frost at <span> Frozen World</span></h2><br>
+                <p>"Step into the enchanting world of 'Frozen World',
+                     where each sip is a frosty journey into flavor paradise.
+                      Our juices are more than just beverages;
+                       they're icy symphonies of freshness that dance on your taste buds.
+                        Immerse yourself in the cool embrace of nature's finest fruits, handpicked and blended to perfection.
+                         It's not just a drink; it's a frost-kissed escape"
+                          "</p>
+                          <a href="#">Know More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/img 1.png" class="frozen">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><a href="#"><img src="./img/thumb 1.png" onclick="imgSlider('./img/img 1.png') ;changeCircleColor('#f51e71da')"></a></li>
+            <li><a href="#"><img src="./img/thumb 2.png" onclick="imgSlider('./img/img 2.png');changeCircleColor('#eb9341')" class ="thumb2"></a></li>
+            <li><a href="#"><img src="./img/thumb 3.png" onclick="imgSlider('./img/img 3.png');changeCircleColor('#bf52eb')"class ="thumb3"></a></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./img/fb.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/insta.png" alt=""></a></li>
+            <li><a href="#"><img src="./img/twitter.png" alt=""></a></li>
+
+
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.frozen').src=anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
